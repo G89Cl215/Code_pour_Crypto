@@ -1,6 +1,6 @@
-#include <stdio.h>
+#include "Toutes_fonctions.h"
 
-int poids_binaire(unsigned long x)
+int	poids_binaire(unsigned long x)
 {
   int i;
   int res;
@@ -16,7 +16,7 @@ int poids_binaire(unsigned long x)
   return (res);
 }
 
-int ft_degre(unsigned long x)
+int	ft_degre(unsigned long x)
 {
   int i = 1;
   int j = 0;
@@ -33,10 +33,10 @@ int ft_degre(unsigned long x)
   }
   return ((((unsigned long)1 << 63) & x) ? 8 : res);
 }
-
+/*
 int main(int ac, char **av)
 {
   long f = 2;
   printf("le degre %ld est : %d\n", f, ft_degre(f));
   return (0);
-}
+}*/

@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "Toutes_fonctions.h"
 
 void  anf(int *f, int n)
 {
@@ -24,7 +24,7 @@ void  anf(int *f, int n)
     }
   }
 }
-
+/*
 int main()
 {
   int f[16] = {0, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0};
@@ -34,4 +34,4 @@ int main()
   anf(f, n);
   for (i = 0; i < (1 << n); i ++) printf("%d", f[i]);
   printf("\n");
-}
+}*/

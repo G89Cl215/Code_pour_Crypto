@@ -1,16 +1,4 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   TP_2.c                                             :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: tgouedar <marvin@42.fr>                    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/02/06 16:44:57 by tgouedar          #+#    #+#             */
-/*   Updated: 2019/02/06 16:46:40 by tgouedar         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-#include <stdio.h>
+#include "Toutes_fonctions.h"
 
 void	Fourrier(int *f, int n)
 {
@@ -23,6 +11,7 @@ void	Fourrier(int *f, int n)
 	nn = 1 << n;
 	jj = nn >> 1;
 	flag = 0;
+	i = -1;
 	while (jj > 0)
 	{
 		i = 0;
@@ -75,7 +64,7 @@ void	Walsh(int *f, int n)
 	}
 }
 
-int		resilience_perso(int *f, int n)
+int	resilience_perso(int *f, int n)
 {
 	int	res;
 	int	i;
@@ -108,15 +97,5 @@ int	resilience_cor()
 		}
 	}	
 	return (r (- 1));
-}
-*/
-int	main()
-{
-	int	f[8] = {0, 1, 1, 0, 1, 0, 0, 1};
-	int	n = 3;
-	int	i = 0;
+}*/
 
-	Walsh(f, n);
-	for (i = 0; i < (1 << n); i ++) printf("|%d\t", f[i]);
-	printf("\n");
-}

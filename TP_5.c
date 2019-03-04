@@ -15,7 +15,7 @@ void					ft_print_base_bin(long unsigned int to_print)
 	write(1, ret, 65);
 }
 
-void				ft_printpol(long unsigned int to_print)
+void					ft_printpol(long unsigned int to_print)
 {
 	long unsigned int	i;
 	int					j;
@@ -37,7 +37,7 @@ void				ft_printpol(long unsigned int to_print)
 	printf("\n");
 }
 
-int					ft_deg(long unsigned int a)
+int						ft_deg(long unsigned int a)
 {
 	long unsigned int	i;
 	int					deg;
@@ -49,7 +49,7 @@ int					ft_deg(long unsigned int a)
 	return (deg);
 }
 
-long unsigned int	POLSQR(long unsigned int a)
+long unsigned int		POLSQR(long unsigned int a)
 {
 	long unsigned int	i;
 	long unsigned int	ret;
@@ -67,7 +67,7 @@ long unsigned int	POLSQR(long unsigned int a)
 	return (ret);
 }
 
-long unsigned int	POLMUL(long unsigned int a, long unsigned int b)
+long unsigned int		POLMUL(long unsigned int a, long unsigned int b)
 {
 	long unsigned int	i;
 	long unsigned int	ret;
@@ -85,7 +85,7 @@ long unsigned int	POLMUL(long unsigned int a, long unsigned int b)
 	return (ret);
 }
 
-long unsigned int	POLMODDIV(long unsigned int *r, long unsigned int a, long unsigned int b)
+long unsigned int		POLMODDIV(long unsigned int *r, long unsigned int a, long unsigned int b)
 {
 	long unsigned int	i;
 	long unsigned int	ret;
@@ -108,7 +108,7 @@ long unsigned int	POLMODDIV(long unsigned int *r, long unsigned int a, long unsi
 	return (ret);
 }
 
-long unsigned int	POLPOWERMOD(long unsigned int a, long unsigned int b)
+long unsigned int		POLPOWERMOD(long unsigned int a, long unsigned int b)
 {
 	long unsigned int	i;
 	long unsigned int	ret;
@@ -136,7 +136,7 @@ long unsigned int	POLPOWERMOD(long unsigned int a, long unsigned int b)
 	}
 	return (ret);
 }
-
+/*
 int main(void)
 {
 	long unsigned int	a = 0x1252;
@@ -148,4 +148,4 @@ int main(void)
 	ft_printpol(POLPOWERMOD(a, b));
 //	ft_print_base_bin(*r);
 	return (0);
-}
+}*/

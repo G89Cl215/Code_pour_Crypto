@@ -21,7 +21,7 @@ unsigned long	GCD(unsigned long a, unsigned long b)
 	}
 	return (gcd);
 }
-
+/*
 void			POLeucl_step(unsigned long *a, unsigned long *b, unsigned long *quotient)
 {
 	long unsigned int	i;
@@ -111,4 +111,4 @@ int				main(void)
 	ft_printpol(aes);
 	printf("Le polynome est-il irrecductible ?\n%d\n", POLisIrr(aes));
 	return (0);
-}
+}*/

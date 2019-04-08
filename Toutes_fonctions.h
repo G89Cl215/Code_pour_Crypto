@@ -21,5 +21,5 @@ long unsigned int		POLMUL(long unsigned int a, long unsigned int b);
 long unsigned int		POLMODDIV(long unsigned int *r, long unsigned int a, long unsigned int b);
 long unsigned int		POLPOWERMOD(long unsigned int a, long unsigned int b);
 unsigned long			GCD(unsigned long a, unsigned long b);
-
+long				ft_Legendre(long a, long p);
 #endif

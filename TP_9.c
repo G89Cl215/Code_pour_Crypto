@@ -72,7 +72,7 @@ long	ft_Legendre(long a, long p)
 		return (ft_Legendre(p % a, a) * ft_pow((a - 1) * (p - 1) / 4));
 	return (ft_Legendre(a / 2, p) * ft_pow((p * p - 1) / 2));
 }
-
+/*
 int main()
 {
 	unsigned long a = 35;
@@ -88,4 +88,4 @@ int main()
 	printf("legendre %li, mod %li, %li \n", 2, 7, ft_Legendre(2, 7));
 	printf("legendre %li, mod %li, %li \n", 3, 7, ft_Legendre(3, 7));
 	printf("legendre %li, mod %li, %li \n", 4, 7, ft_Legendre(4, 7));
-}
+}*/
